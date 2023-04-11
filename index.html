@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SWIFT</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/9c578fafba.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><i class="fa-solid fa-rocket"></i> SWIFT</a></div>
+            <ul class="links">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">SUPPORT</a></li>
+              <li><a href="#">BLOG</a></li>
+            </ul>
+            <a href="#" class="action-btn">Get Started</a>
+            <div class="toggle-btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">SUPPORT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#" class="action-btn">Get Started</a></li>  
+        </div>
+        <script>
+           document.querySelector('.toggle-btn').onclick = () =>{
+       document.querySelector('.dropdown_menu').classList.toggle('active');
+        }
+       </script>
+       <section class="hero">
+        <div class="intro">
+            <h1>Get a card.<br> Join the fastest payment platform<br> </h1>
+            <p>Send and spend money abroad with ease, thanks to SWIFT's virtual cards and cross-border transfers.</p>
+            <a href="#"><img src="google.png"></a>
+        </div>
+        <div class="card_img">
+            <img src="img1.png" alt="card image">
+        </div>
+       </section>
+       <section class="hero2">
+         <div class="ads">
+            <div class="ad1">
+                <img src="bag.png">
+                <div>
+                    <h3>Shopping</h3>
+                    <p>Make purchases both locally and internationally with your SWIFT card.</p>
+                </div>
+
+            </div>
+            <div class="ad2">
+                <img src="card.png">
+                <div>
+                    <h3>Payments</h3>
+                    <p>Your SWIFT card is an accepted form of payment everywhere.</p>
+                </div>
+
+            </div>
+            <div class="ad3">
+                <img src="plane.png">
+                <div>
+                    <h3>Speed</h3>
+                    <p>Fast and seamless transactions.</p>
+                </div>
+
+            </div>
+
+         </div>
+       </section>
+    </body>
+</html>

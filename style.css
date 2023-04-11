@@ -1,0 +1,247 @@
+body{
+    background: linear-gradient(90deg, #0b0e10 50%, rgb(40, 39, 39)) ;
+    color: white;
+    font-family: myfont ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+}
+
+@font-face{
+    font-family: myfont;
+    src: url(SFPRODISPLAYREGULAR.otf);
+}
+
+li, ul{
+    list-style: none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+}
+
+.navbar{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+
+.navbar .logo a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .toggle-btn{
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.navbar .links{
+    display: flex;
+    gap: 4rem;
+}
+.navbar ul li:hover{
+    scale: 1.05;
+    font-weight: bold;
+}
+.action-btn{
+    color: white ;
+    background-color: #f91d50;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.action-btn:hover{
+    scale: 1.08;
+}
+.action-btn:active{
+    scale: 0.95;
+}
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    overflow: hidden;
+    background: rgb(247, 243, 243);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    display: none;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.dropdown_menu li a{
+    text-decoration: none;
+    color: #0b0e10;
+}
+.dropdown_menu.active{
+    height: 240px;
+}
+.dropdown_menu .action-btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: white;
+}
+
+.hero{
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.intro{
+    margin: 1rem auto;
+    
+}
+.intro h1{
+    font-size: 3rem;
+    width: 500px;
+}
+.card_img img{
+    margin: 0%;
+    padding: 0%;
+}
+.intro img{
+    height: 150px
+}
+.card_img{
+    padding-right: -100px;
+}
+
+
+.ads{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    gap: 4rem;
+}
+.ads img{
+    height: 50px;
+}
+.ad1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0.5rem;
+    
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 20px;
+}
+.ad2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0.5rem;
+    
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 20px;
+}
+.ad3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0.5rem;
+   
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 20px;
+}
+.ads p{
+    font-size: small;
+    width: 150px;
+    color: rgb(165, 161, 161);
+    
+}
+.ad1:hover{
+    background-color: #f91d50;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .6s;
+}
+.ad2:hover{
+    background-color: #f91d50;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .6s;
+}
+.ad3:hover{
+    background-color: #f91d50;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .3s;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    
+}
+::-webkit-scrollbar-track{
+    background: rgb(40, 39, 39);
+}
+::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 5px;
+}
+.navbar .toggle-btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 768px){
+    .navbar .links, .navbar .action-btn{
+        display: none;
+    }
+    .navbar .toggle-btn{
+        display: block;
+    }
+   .dropdown_menu{
+    display: block;
+    text-align: center;
+    position:sticky;
+    margin: 0 auto;
+   }
+   .hero{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   .hero .card_img img{
+    object-fit: cover;
+    width:80vw;
+   }
+   .intro h1{
+    font-size: 2rem;
+    max-width: 85vw;
+   }
+ 
+}   
