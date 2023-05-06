@@ -9,7 +9,7 @@ body{
 
 @font-face{
     font-family: myfont;
-    src: url(SFPRODISPLAYREGULAR.otf);
+    src: url('SFPRODISPLAYREGULAR.otf');
 }
 
 li, ul{
